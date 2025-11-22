@@ -9,16 +9,16 @@ export default function Nav(){
                 alt='logo'
             />
             <ul className='nav-items'>
-                <a href='#about'>
-                    <li className='nav-item'>About</li>
+                <a href='/'>
+                    <li className='nav-item'>Home</li>
                 </a>
 
                 <hr className='nav-divider'/>
-                <a href='#about'>
+                <a href='/privacy'>
                     <li className='nav-item'>Privacy</li>
                 </a>
                 <hr className='nav-divider'/>
-                <a href='#about'>
+                <a href='https://discord.gg/AWqKP27Aq5'>
                     <li className='nav-item'>Discord</li>
                 </a>
             </ul>

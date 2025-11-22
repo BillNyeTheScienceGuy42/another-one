@@ -9,7 +9,6 @@ a {
 }
 body {
   margin: 0;
-  height: 500vh;
   overflow-x: hidden;
   font-family: main;
 
@@ -62,6 +61,7 @@ html {
   margin-top: 0;
   padding-top: 50px;
   color: rgb(248, 239, 185);
+  font-size: 3rem;
 }
 
 .nav-bar-container {
@@ -76,6 +76,8 @@ html {
   text-align: center;
   z-index: 1000;
   backdrop-filter: blur(5px);
+  justify-content: center;
+  
 }
 
 .nav-logo {
@@ -83,6 +85,7 @@ html {
   height: 50px;
   left: 0;
   padding-left: 20px;
+  position: absolute;
 }
 
 .nav-items {
@@ -101,9 +104,41 @@ html {
   background-color: rgb(248, 239, 185);
 }
 
+.privacy-page {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(37, 42, 53);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.privacy-page > h1 {
+  color: rgb(248, 239, 185);
+  text-decoration: underline;
+
+}
+
+.privacy-list {
+  width: 50%;
+
+}
+.privacy-item {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 767px) {
+
+  .privacy-list {
+    min-width: 300px;
+    width: 40%;
+    font-size: 1.3rem;
+  }
   .header-logo {
     width: 70%;
+    min-width: 300px;
   }
 
   .nav-bar-container {
@@ -111,8 +146,8 @@ html {
   }
 
   .nav-logo {
-    width: clamp(50px, 12vw, 75px);
-    height: clamp(50px, 12vw, 75px);
+    width: clamp(40px);
+    height: clamp(40px);
   }
 
   .nav-items {
@@ -121,13 +156,17 @@ html {
   }
 
   .about-container > h1 {
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 768px) {
   .header-logo {
     width: 500px;
+  }
+  .privacy-list {
+    width: 50%;
+    font-size: 1.5rem;
   }
 
   .nav-items {
@@ -136,6 +175,6 @@ html {
   }
 
   .about-container > h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: 3rem;
   }
 }
