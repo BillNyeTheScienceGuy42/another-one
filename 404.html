@@ -6,17 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <script>
-        // Redirect to index.html and preserve the path for SPA routing
-        var redirectTo = '/index.html';
-        if (location.pathname !== '/index.html') {
-          var newUrl = redirectTo + location.search + location.hash;
-          if (location.pathname && location.pathname !== '/') {
-            newUrl += '?p=' + encodeURIComponent(location.pathname);
-          }
-          window.location.replace(newUrl);
-        }
-      </script>
+    <meta http-equiv="refresh" content="0; url=./index.html" />
   </head>
   <body>
   </body>
