@@ -2,16 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script>
-      // Capture the original path and redirect to index.html with it as a query parameter
-      // This allows React Router to handle the route client-side
-      const path = window.location.pathname + window.location.search + window.location.hash;
-      // Remove leading slash for the parameter
-      const encodedPath = encodeURIComponent(path.replace(/^\//, ''));
-      window.location.replace('/index.html?p=' + encodedPath);
-    </script>
+    <title>Page Not Found</title>
   </head>
   <body>
+    <h1>404 - Page Not Found</h1>
+    <p>The page you're looking for doesn't exist.</p>
+    <a href="/">Return to Home</a>
   </body>
 </html>
